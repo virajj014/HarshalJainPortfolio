@@ -1,0 +1,85 @@
+.about {
+    background-color: white;
+    color: black;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.about .textdiv {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 10px;
+}
+
+.about .textdiv h1 {
+    font-family: "Anta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 4rem;
+    color: black;
+}
+
+.about .textdiv p{
+    font-family: "Anta", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: rgb(121, 121, 121);
+}
+
+
+.about img{
+    width:30%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+@media (max-width: 1000px){
+    .about{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding-top: 20%;
+    }
+
+    .about .textdiv{
+        width: 90%;
+    }
+
+    .about img{
+        margin: 20px 0px;
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 500px){
+    .about{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .about .textdiv h1{
+        font-size: 2rem;
+    }
+
+    .about .textdiv p{
+        font-size: 0.9rem;
+    }
+
+    .about img{
+        width: 80%;
+    }
+    
+}
